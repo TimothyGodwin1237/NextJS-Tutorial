@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/app/dashboardParallel/@analytics/loading.jsx", "src/app/dashboardParallel/@analytics/default.jsx", "src/app/dashboardParallel/@team/page.jsx", "src/app/dashboardParallel/@team/loading.jsx", "src/app/dashboardParallel/@team/error.jsx", "src/app/dashboardParallel/@team/settings/page.jsx", "src/app/dashboardParallel/@analytics/page.jsx", "src/app/dashboardParallel/layout.jsx", "src/app/dashboardParallel/Header.jsx", "src/app/dashboardParallel/default.jsx", "src/app/dashboardParallel/page.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
