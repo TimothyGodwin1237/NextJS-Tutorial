@@ -1,4 +1,5 @@
 // app/(SSRroutes)/page.jsx
+
 async function fetchPosts() {
   console.log('Fetching posts at (default cache):', new Date().toISOString());
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');

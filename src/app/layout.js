@@ -1,14 +1,24 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  // variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-geist-mono"
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+
 });
 
 export const metadata = {
@@ -19,8 +29,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body suppressHydrationWarning={true}
-        className={`${geistSans.variable} ${geistMono.variable} bg-gray-50 antialiased`}
+      <body
+        suppressHydrationWarning={true}
+        // className={`${geistSans.variable} bg-white`} //we can add multiple fonts like this
+        className={`${montserrat.variable} ${geistMono.variable} ${geistSans.className} bg-white`}
       >
         {children}
       </body>
