@@ -1,10 +1,14 @@
 // http://localhost:3000/dashboard/1?lang=tamil
+import { pause } from "@/lib/utils";
 import Link from "next/link";
 
 export default async function DashboardPage({ params, searchParams }) {
+  await pause(4000)
   // const id = (await params).id;
   const { id } = await params;
   const { lang = "en" } = await searchParams;
+
+  // throw new Error("Failed to load dashboard data");
 
   // For Client Component
   //  const { id } = use(params);

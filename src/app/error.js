@@ -3,7 +3,7 @@
 export default function Error({ error, reset }) {
   return (
     <div>
-      <p className="text-red-600">Error in dahboard: {error.message}</p>
+      <p className="text-red-600">Error in Main Route: {error.message}</p>
       <button onClick={() => reset()}>Try again</button>
     </div>
   );
